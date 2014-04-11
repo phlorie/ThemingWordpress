@@ -1,0 +1,40 @@
+/*!
+Theme name : 
+Description : Un thème réalisé par phlorie
+Version : 1.0
+Author : phlorie
+Author URI : http://plusgeekpluschic.fr
+*/
+
+
+@import "compass";
+
+@import "partials/theme";
+@import "partials/base";
+
+@import "partials/layout";
+@import "partials/general";
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lato-lig';
+    src: url('fonts/lato-lig-webfont.eot');
+    src: url('fonts/lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-lig-webfont.woff') format('woff'),
+         url('fonts/lato-lig-webfont.ttf') format('truetype'),
+         url('fonts/lato-lig-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

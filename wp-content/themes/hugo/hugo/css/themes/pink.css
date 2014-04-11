@@ -1,0 +1,33 @@
+/*
+ * Pink asset
+*/
+
+a {
+    color: #e93c65;
+}
+
+.nav .active a,
+.navbar-nav li a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.secondary aside:hover .widget-title,
+.single-entry-footer:hover {
+    border-color: #e93c65;
+}
+
+.entry-content:hover .read-more,
+.footer-credits a:hover,
+.entry-meta li a:hover,
+.footer-metas li a:hover,
+.entry-title a {
+    color: #e93c65;
+}
+
+.entry-meta li a,
+.footer-metas li a,
+.entry-title a:hover {
+    color: #e56e8a;
+}

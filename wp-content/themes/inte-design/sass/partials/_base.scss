@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: $margin-bottom 0 $margin-bottom $margin-sides;
+}
+h2 {
+	font-weight: normal;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $link-color;
+}

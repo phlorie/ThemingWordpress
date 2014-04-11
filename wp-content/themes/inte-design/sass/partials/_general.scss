@@ -1,0 +1,16 @@
+body {
+	background-color: $background;
+	font-family: 'lato-lig', Verdana, sans-serif;
+}
+
+.header-wrapper {
+	font-family: 'BebasNeue', Helvetica, sans-serif;
+	font-size: 2.5em;
+	a {
+		color: $white;
+	}
+}
+
+.post {
+	background-color: $bg-blocks;
+}

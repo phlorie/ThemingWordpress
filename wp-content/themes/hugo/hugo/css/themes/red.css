@@ -1,0 +1,33 @@
+/*
+ * Red asset
+*/
+
+a {
+    color: #e93c4f;
+}
+
+.nav .active a,
+.navbar-nav li a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.secondary aside:hover .widget-title,
+.single-entry-footer:hover {
+    border-color: #e93c4f;
+}
+
+.entry-content:hover .read-more,
+.footer-credits a:hover,
+.entry-meta li a:hover,
+.footer-metas li a:hover,
+.entry-title a {
+    color: #e93c4f;
+}
+
+.entry-meta li a,
+.footer-metas li a,
+.entry-title a:hover {
+    color: #FF7E8C;
+}

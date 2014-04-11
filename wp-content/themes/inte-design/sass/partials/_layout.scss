@@ -1,0 +1,75 @@
+#wrapper {
+  width: $width-main;
+  margin: auto;
+}
+
+%all--bloc {
+  display: inline;
+  float: left;
+  margin: 0 $margin-sides $margin-bottom $margin-sides;
+  padding: $margin-bottom;
+}
+
+%bloc--small {
+	width: $square-small;
+	height: $square-small;
+}
+%bloc--normal {
+	width: $square-normal;
+	height: $square-normal;
+}
+%second-small {
+  margin: ($square-small + 30px) 0 0 (0 - $square-small - 25px);
+}
+
+.row-post .post {
+  @extend %all--bloc;
+}
+
+@mixin row-odd {
+  @for $j from 1 through 6 {
+    .post:nth-child(#{$j}) {
+      @if $j % 3 == 1 {
+        @extend %bloc--normal;
+      }
+      @else {
+        @extend %bloc--small;
+      }
+      @if $j % 3 == 0 {
+        @extend %second-small;
+      }
+    }
+  }
+}
+@mixin row-even {
+  @for $j from 1 through 6 {
+    .post:nth-child(#{$j}) {
+      @if $j % 3 == 0 {      
+        @extend %bloc--normal;
+      }
+      @else {
+        @extend %bloc--small;
+      }
+      @if $j % 3 == 2 {
+        @extend %second-small;
+      }
+    }
+  }
+}
+
+.row-post:nth-child(odd) {
+  @include pie-clearfix;
+  @include row-odd;
+}
+.row-post:nth-child(even) {
+  @include pie-clearfix;
+  @include row-even;
+}
+
+.single {
+  margin: 0 $margin-sides;
+  .post {
+    width: $width-content;
+  }
+}
+
