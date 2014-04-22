@@ -11,6 +11,28 @@ body {
 	}
 }
 
-.post {
+.wrapper-single {
 	background-color: $bg-blocks;
+}
+
+/* COmmentaires */
+
+.comment {
+	margin-bottom: 20px;
+	.children {
+		padding-left: 10px;
+		margin-top: 20px;
+	}
+	.avatar {
+		float: left;
+	}
+	cite.fn {
+		margin-left: 10px;
+	}
+	.says {
+		display: none;
+	}
+	.comment-meta {
+		margin-left: 42px;
+	}
 }

@@ -26,11 +26,7 @@
 			<div class="header-wrapper">
 				<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 				
-				<!--<ul id="nav">
-					<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
-					<?php wp_list_pages('depth=1&title_li='); ?>
-					<?php wp_list_cats('sort_column=menu_order&depth=1&title_li=&show_count=0'); ?>
-				</ul>-->
+				
 				
 			</div>
 		</header>

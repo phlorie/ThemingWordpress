@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	color: $text-color;
 }
 
 h1 {
@@ -14,4 +15,13 @@ h2 {
 a {
 	text-decoration: none;
 	color: $link-color;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

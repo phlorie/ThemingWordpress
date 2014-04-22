@@ -8,9 +8,12 @@ $nbposts = 0;
 			echo '<div class="row-post">';
 		} ?>
 				<div class="post">
-					<h2 class="post-title">
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					</h2>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+					<div class="details">
+						<h2 class="post-title">
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						</h2>
+					</div>
 				</div>
 		<?php if (($nbposts % 6) == 5) {
 			echo '</div>';

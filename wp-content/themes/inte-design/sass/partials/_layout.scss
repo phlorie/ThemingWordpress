@@ -7,7 +7,6 @@
   display: inline;
   float: left;
   margin: 0 $margin-sides $margin-bottom $margin-sides;
-  padding: $margin-bottom;
 }
 
 %bloc--small {
@@ -19,7 +18,7 @@
 	height: $square-normal;
 }
 %second-small {
-  margin: ($square-small + 30px) 0 0 (0 - $square-small - 25px);
+  margin: ($square-small + 10px) 0 0 (0 - $square-small - 5px);
 }
 
 .row-post .post {
@@ -66,10 +65,20 @@
   @include row-even;
 }
 
-.single {
-  margin: 0 $margin-sides;
-  .post {
-    width: $width-content;
+.wrapper-single {
+  @include pie-clearfix;
+  .single {
+    margin: 0 $margin-sides; 
+    float: left;
+    .post {
+      width: $width-content;
+      padding: 20px; 
+    }
+  }
+  .side {
+    float: right;
+    padding-right: 20px
   }
 }
+
 

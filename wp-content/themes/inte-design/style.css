@@ -12,23 +12,35 @@ Author URI : http://plusgeekpluschic.fr
 body {
   margin: 0;
   padding: 0;
+  color: #194363;
 }
 
-/* line 6, sass/partials/_base.scss */
+/* line 7, sass/partials/_base.scss */
 h1 {
   margin: 10px 0 10px 5px;
 }
 
-/* line 9, sass/partials/_base.scss */
+/* line 10, sass/partials/_base.scss */
 h2 {
   font-weight: normal;
   margin: 0;
 }
 
-/* line 14, sass/partials/_base.scss */
+/* line 15, sass/partials/_base.scss */
 a {
   text-decoration: none;
-  color: #194363;
+  color: #286b9e;
+}
+/* line 18, sass/partials/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 23, sass/partials/_base.scss */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 1, sass/partials/_layout.scss */
@@ -42,27 +54,26 @@ a {
   display: inline;
   float: left;
   margin: 0 5px 10px 5px;
-  padding: 10px;
 }
 
-/* line 13, sass/partials/_layout.scss */
+/* line 12, sass/partials/_layout.scss */
 .row-post:nth-child(odd) .post:nth-child(2), .row-post:nth-child(odd) .post:nth-child(3), .row-post:nth-child(odd) .post:nth-child(5), .row-post:nth-child(odd) .post:nth-child(6), .row-post:nth-child(even) .post:nth-child(1), .row-post:nth-child(even) .post:nth-child(2), .row-post:nth-child(even) .post:nth-child(4), .row-post:nth-child(even) .post:nth-child(5) {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
 }
 
-/* line 17, sass/partials/_layout.scss */
+/* line 16, sass/partials/_layout.scss */
 .row-post:nth-child(odd) .post:nth-child(1), .row-post:nth-child(odd) .post:nth-child(4), .row-post:nth-child(even) .post:nth-child(3), .row-post:nth-child(even) .post:nth-child(6) {
-  width: 290px;
-  height: 290px;
+  width: 310px;
+  height: 310px;
 }
 
-/* line 21, sass/partials/_layout.scss */
+/* line 20, sass/partials/_layout.scss */
 .row-post:nth-child(odd) .post:nth-child(3), .row-post:nth-child(odd) .post:nth-child(6), .row-post:nth-child(even) .post:nth-child(2), .row-post:nth-child(even) .post:nth-child(5) {
   margin: 160px 0 0 -155px;
 }
 
-/* line 60, sass/partials/_layout.scss */
+/* line 59, sass/partials/_layout.scss */
 .row-post:nth-child(odd) {
   *zoom: 1;
 }
@@ -73,7 +84,7 @@ a {
   clear: both;
 }
 
-/* line 64, sass/partials/_layout.scss */
+/* line 63, sass/partials/_layout.scss */
 .row-post:nth-child(even) {
   *zoom: 1;
 }
@@ -84,13 +95,66 @@ a {
   clear: both;
 }
 
-/* line 69, sass/partials/_layout.scss */
-.single {
-  margin: 0 5px;
+/* line 68, sass/partials/_layout.scss */
+.wrapper-single {
+  *zoom: 1;
 }
-/* line 71, sass/partials/_layout.scss */
-.single .post {
+/* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.wrapper-single:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 70, sass/partials/_layout.scss */
+.wrapper-single .single {
+  margin: 0 5px;
+  float: left;
+}
+/* line 73, sass/partials/_layout.scss */
+.wrapper-single .single .post {
   width: 600px;
+  padding: 20px;
+}
+/* line 78, sass/partials/_layout.scss */
+.wrapper-single .side {
+  float: right;
+  padding-right: 20px;
+}
+
+/* line 1, sass/partials/_home.scss */
+.row-post .post {
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9f9;
+}
+/* line 5, sass/partials/_home.scss */
+.row-post .post .details {
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  width: 94%;
+  height: 100%;
+  background-color: rgba(31, 180, 218, 0.6);
+  -webkit-transition: top 0.3s ease;
+  -moz-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+/* line 13, sass/partials/_home.scss */
+.row-post .post .details:hover {
+  top: 10px;
+}
+/* line 17, sass/partials/_home.scss */
+.row-post .post h2 {
+  font-size: 1.4em;
+  width: 100%;
+  height: 100%;
+}
+/* line 22, sass/partials/_home.scss */
+.row-post .post a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* line 1, sass/partials/_general.scss */
@@ -110,8 +174,35 @@ body {
 }
 
 /* line 14, sass/partials/_general.scss */
-.post {
+.wrapper-single {
   background-color: #f8f9f9;
+}
+
+/* COmmentaires */
+/* line 20, sass/partials/_general.scss */
+.comment {
+  margin-bottom: 20px;
+}
+/* line 22, sass/partials/_general.scss */
+.comment .children {
+  padding-left: 10px;
+  margin-top: 20px;
+}
+/* line 26, sass/partials/_general.scss */
+.comment .avatar {
+  float: left;
+}
+/* line 29, sass/partials/_general.scss */
+.comment cite.fn {
+  margin-left: 10px;
+}
+/* line 32, sass/partials/_general.scss */
+.comment .says {
+  display: none;
+}
+/* line 35, sass/partials/_general.scss */
+.comment .comment-meta {
+  margin-left: 42px;
 }
 
 @font-face {

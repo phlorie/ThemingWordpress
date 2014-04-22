@@ -1,0 +1,27 @@
+.row-post .post {
+	overflow:hidden;
+	position: relative;
+	background-color: $bg-blocks;
+	.details {
+		padding: 10px;
+		position: absolute;
+		top: 100px;
+		width: 94%;
+		height: 100%;
+		background-color: rgba(31,180,218,0.6);
+  		@include single-transition(top,0.3s,ease,false);
+		&:hover {
+			top: 10px;
+		}
+	}
+	h2 {
+		font-size: 1.4em;
+		width: 100%;
+		height: 100%;
+	}
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
